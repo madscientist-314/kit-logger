@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  }
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {        
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+  background-image: url("https://imgur.com/4XV7NMn.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img.background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 150%;
+  height: 150%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.nav {
+  border-radius: 25px;
+  border: 2px solid #3c3c3c;
+  top: 7px;
+  background-color: #3c3c3c;
+  padding: 0px;
+  position: sticky;
+  max-width: 8000px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.topnav {
+  border-radius: 25px;
+  border: 2px solid #3c3c3c;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ccced1;
+}
+
+.topnav a.b:hover {
+  background-color: #aa5139;
+  color: black;
+}
+
+.topnav a.s:hover {
+  background-color: #b2b1b0;
+  color: black;
+}
+
+.topnav a.g:hover {
+  background-color: #c69f52;
+  color: black;
+}
+
+h1 {
+  color: orange;
+  font-family: verdana;
+  font-size: 200%;
+}
+
+h2 {
+  color: white;
+  font-family: TimesNewRoman;
+  font-size: 180%;
+}
+
+h3 {
+  color: white;
+  font-family: TimesNewRoman;
+  font-size: 120%;
+}
+
+h4 {
+  color: white;
+  font-family: TimesNewRoman;
+}
+
+p {
+  color: white;
+  font-family: TimesNewRoman;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 1px;
+  text-align: center;
+}
