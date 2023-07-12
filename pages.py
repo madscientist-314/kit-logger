@@ -1,5 +1,5 @@
 from threading import Thread
-from flask import Flask, render_template, send_file
+from flask import Flask, send_file
 
 app = Flask(
   __name__,
