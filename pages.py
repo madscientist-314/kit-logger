@@ -20,15 +20,15 @@ def home():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return send_file('Error.html')
+    return send_file('pages/error.html')
 
 @app.route('/bronze')
 def bronze():
-    return send_file('Bronze.html')
+    return send_file('bronze.html')
 
 @app.route('/bronze/expedition')
 def bronze_exped():
-    return send_file('BExpedition.html')
+    return send_file('bexpedition.html')
 
 @app.route('/bronze/skill')
 def bronze_skill():
@@ -36,28 +36,32 @@ def bronze_skill():
 
 @app.route('/bronze/volunteering')
 def bronze_volunteer():
-    return send_file('BVolunteering.html')
+    return send_file('bvolunteering.html')
 
 @app.route('/bronze/physical')
 def bronze_physical():
-    return send_file('BPhysical.html')
+    return send_file('bphysical.html')
 
 @app.route('/silver')
 def silver():
-    return send_file('Silver.html')
+    return send_file('silver.html')
 
 @app.route('/silver/expedition')
 def silver_exped():
-    return send_file('SExpedition.html')
+    return send_file('sexpedition.html')
 
 @app.route('/silver/skill')
 def silver_skill():
-    return send_file('SSkill.html')
+    return send_file('sskill.html')
 
 @app.route('/silver/volunteering')
 def silver_volunteer():
-    return send_file('SVolunteering.html')
+    return send_file('svolunteering.html')
 
 @app.route('/silver/physical')
 def silver_physical():
-    return send_file('SPhysical.html')
+    return send_file('sphysical.html')
+
+@app.route('/gold')
+def gold():
+  return send_file('gold.html')
