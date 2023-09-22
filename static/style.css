@@ -4,7 +4,7 @@
 
 .column {
   float: left;
-  width: 25%;
+  width: 50%;
   padding: 10px;
 }
 
@@ -23,19 +23,6 @@
   clear: both;
 }
 
-.container {
-  position: relative;
-  display: none;
-}
-
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-  }
-
 .closebtn {
   position: absolute;
   top: 10px;
@@ -45,17 +32,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {        
-  .column {
-    width: 100%;
-  }
-}
-
 body {
-  background-image: url("https://imgur.com/4XV7NMn.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000
 }
 
 img.background {
@@ -71,9 +50,21 @@ img.background {
 
 .nav {
   border-radius: 25px;
-  border: 2px solid #3c3c3c;
-  top: 7px;
-  background-color: #3c3c3c;
+  border: 2px solid #02269e;
+  top: 0px;
+  background-color: #02269e;
+  padding: 0px;
+  position: sticky;
+  max-width: 8000px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.nave {
+  border-radius: 25px;
+  border: 2px solid #8400c6;
+  top: 0px;
+  background-color: #8400c6;
   padding: 0px;
   position: sticky;
   max-width: 8000px;
@@ -83,41 +74,143 @@ img.background {
 
 .topnav {
   border-radius: 25px;
-  border: 2px solid #3c3c3c;
+  border: 2px solid #02269e;
+  overflow: hidden;
+}
+
+.topnave {
+  border-radius: 25px;
+  border: 2px solid #8400c6;
   overflow: hidden;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   color: #ffffff;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
   font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 0.3s;
+}
+
+.topnave a {
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 0.3s;
+}
+
+.topnav a.leftimg {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.topnave a.leftimg {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.topnave a.c {
+  float: left;
+  padding: 10px 830px;
+  transition-duration: 0.3s;
 }
 
 .topnav a:hover {
-  background-color: #ccced1;
+  background-color: #1239ba;
+}
+
+.topnave a:hover {
+  background-color: #aa6dff;
+}
+
+.topnav a.active {
+  background-color: #1239ba;
 }
 
 .topnav a.b:hover {
   background-color: #aa5139;
-  color: black;
 }
 
-.topnav a.s:hover {
+.topnav a.si:hover {
   background-color: #b2b1b0;
-  color: black;
 }
 
 .topnav a.g:hover {
   background-color: #c69f52;
-  color: black;
+  color: #000;
+}
+
+.topnav a.e:hover {
+  background-color: #8cc04b;
+  color: #000;
+  z-index: 3;
+}
+
+.topnav a.v:hover {
+  background-color: #e51846;
+  color: #000;
+  z-index: 3;
+}
+
+.topnav a.s:hover {
+  background-color: #009fe3;
+  color: #000;
+  z-index: 3;
+}
+
+.topnav a.p:hover {
+  background-color: #fec800;
+  color: #000;
+  z-index: 3;
+}
+
+.footer {
+  background-color: #00244b;
+  border: 2px solid #00244b;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer a.b {
+  color: #ffffff;
+  background-color: #223c38;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.footer a.b:hover {
+  background-color: #345d56;
 }
 
 h1 {
-  color: orange;
+  color: #000;
   font-family: verdana;
   font-size: 200%;
 }
@@ -140,8 +233,14 @@ h4 {
 }
 
 p {
-  color: white;
+  color: #000;
   font-family: TimesNewRoman;
+}
+
+p.f {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 table {
