@@ -1,3 +1,4 @@
+#GNU AGPLv3.0 Copyright (C) 2023 Thomas Kirby
 from threading import Thread
 from flask import Flask, send_file
 
@@ -12,6 +13,8 @@ def runwebsite():
   t = Thread(target=run)
   t.start()
 
+def keep_alive():
+  Thread(target=run).start()
 
 @app.route('/')
 @app.route('/home')
