@@ -1,4 +1,4 @@
-#GNU AGPLv3.0 Copyright (C) 2023 Thomas Kirby
+#GNU AGPLv3.0 Copyright (C) 2023 Thomas Kirby v0.0.6
 from threading import Thread
 from flask import Flask, send_file
 
