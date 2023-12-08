@@ -61,6 +61,7 @@ def login():
 def silver():
   return send_file('pages/signup.html')
 
+
 @app.route('/login/8iNk6yncgPwtRs5bgRA')
 def admin():
   return send_file('pages/hidden/admin.html')
