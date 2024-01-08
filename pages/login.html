@@ -1,6 +1,6 @@
 <!-- 
   GNU AGPLv3.0 2023 
-  Software: v0.0.8
+  Software: v0.0.9
   Kit Logger - DofE Kit Management System
   Copyright (C) 2023 Thomas Kirby
 
@@ -20,37 +20,39 @@
 <!DOCTYPE html>
 <html lang="en-EN">
   <title>Kit Logger</title>
-  
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="google-signin-client_id" content="198686331733-vg9igi4g54kfqn0659vdtu6rfnhdoqtq.apps.googleusercontent.com">
+    <meta
+      name="google-signin-client_id"
+      content="198686331733-vg9igi4g54kfqn0659vdtu6rfnhdoqtq.apps.googleusercontent.com"
+    />
     <link rel="icon" href="https://i.imgur.com/ERlryfF.png" />
     <link rel="stylesheet" href="static/style.css" type="text/css" />
-    
+
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script>
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
       }
-      
+
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
-          console.log('User signed out.');
+          console.log("User signed out.");
         });
       }
     </script>
-    
   </head>
 
   <body>
     <div class="nav">
       <div class="topnav">
-        <a padding="0", href="https://kit-logger.tomkirby314.repl.co/">
+        <a padding="0" , href="https://kit-logger.tomkirby314.repl.co/">
           <img
             margin="0"
             padding="0"
@@ -58,9 +60,9 @@
             src="https://img.icons8.com/ios-filled/50/FFFFFF/restart--v1.png"
             width="19"
             height="19"
-          >
+          />
         </a>
-        <a class="leftimg" padding="0", href="https://dofe.org">
+        <a class="leftimg" padding="0" , href="https://dofe.org">
           <img
             margin="0"
             padding="0"
@@ -68,24 +70,16 @@
             src="https://i.imgur.com/HAh0qBw.png"
             width="19"
             height="19"
-          >
+          />
         </a>
-        
+
         <a href="https://kit-logger.tomkirby314.repl.co/login">
           Login/Signup
         </a>
-        <a href="https://kit-logger.tomkirby314.repl.co/contact">
-          Contact
-        </a>
-        <a href="https://kit-logger.tomkirby314.repl.co/faqs">
-          FAQs
-        </a>
-        <a href="https://kit-logger.tomkirby314.repl.co/hire">
-          Hire
-        </a>
-        <a href="https://kit-logger.tomkirby314.repl.co/news">
-          News
-        </a>
+        <a href="https://kit-logger.tomkirby314.repl.co/contact"> Contact </a>
+        <a href="https://kit-logger.tomkirby314.repl.co/faqs"> FAQs </a>
+        <a href="https://kit-logger.tomkirby314.repl.co/hire"> Hire </a>
+        <a href="https://kit-logger.tomkirby314.repl.co/news"> News </a>
         <a class="active" href="https://kit-logger.tomkirby314.repl.co/">
           Home
         </a>
@@ -93,15 +87,30 @@
     </div>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <a href="#" onclick="signOut();">Sign out</a>
-    <p>
-      
-    </p>
+    <p></p>
     <div class="footer">
       <p class="f">
-        St Clement Danes School<br><br>
-        <a class="b" href="https://www.stclementdanes.org.uk" target="_blank" rel="noopener noreferrer">Website</a>
-        <a class="b" href="https://twitter.com/SCDDofE?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">Follow @SCDDofE</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <!--https://publish.twitter.com/#-->
+        St Clement Danes School<br /><br />
+        <a
+          class="b"
+          href="https://www.stclementdanes.org.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Website</a
+        >
+        <a
+          class="b"
+          href="https://twitter.com/SCDDofE?ref_src=twsrc%5Etfw"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Follow @SCDDofE</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <!--https://publish.twitter.com/#-->
       </p>
     </div>
   </body>
