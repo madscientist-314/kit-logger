@@ -15,7 +15,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program [LICENSE.txt].
-If not, see <https://www.gnu.org/licenses/>.
+If not, see <https://www.gnu.org/licenses/gpl.html>.
 '''
 from threading import Thread
 from flask import Flask, send_file
